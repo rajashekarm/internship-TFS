@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Transactions</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Add your CSS file link here -->
+</head>
+<body>
+    <header>
+        <h1>View Transactions</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="customers.html">View All Customers</a></li>
+            <li><a href="transfer.html">Transfer Money</a></li>
+            <li><a href="transactions.html">View Transactions</a></li>
+            <li><a href="contact.html">Contact Us| About Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="transaction-list">
+            <h2>Transaction History</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Transaction ID</th>
+                        <th>Sender</th>
+                        <th>Receiver</th>
+                        <th>Amount</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody id="transaction-table-body">
+                    <!-- Transaction data will be dynamically inserted here -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Banking System</p>
+    </footer>
+
+    <script src="transactions.js"></script> <!-- Add your JavaScript file link here -->
+</body>
+</html>

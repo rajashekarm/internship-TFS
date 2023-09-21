@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View All Customers</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Add your CSS file link here -->
+</head>
+<body>
+    <header>
+        <h1>View All Customers</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="customers.html">View All Customers</a></li>
+            <li><a href="transfer.html">Transfer Money</a></li>
+            <li><a href="transactions.html">View Transactions</a></li>
+            <li><a href="contact.html">Contact Us| About Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="customer-list">
+            <h2>Customer List</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Current Balance</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="customer-table-body">
+                    <!-- Customer data will be dynamically inserted here -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Banking System</p>
+    </footer>
+
+    <script src="customers.js"></script>
+    <script src="transfer.js"></script>
+    <script src="transactions.js"></script>
+    <script src="Node.js"></script>
+    <script src="server.js"></script>
+    <!-- Add your JavaScript file link here -->
+</body>
+</html>

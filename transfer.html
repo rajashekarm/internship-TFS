@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transfer Money</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your global CSS file -->
+</head>
+<body>
+    <header>
+        <h1>Transfer Money</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="customers.html">View All Customers</a></li>
+            <li><a href="transfer.html">Transfer Money</a></li>
+            <li><a href="transactions.html">View Transactions</a></li>
+            <li><a href="contact.html">Contact Us| About Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="transfer-form">
+            <h2>Transfer Money Between Customers</h2>
+            <form id="money-transfer-form">
+                <!-- Sender Dropdown -->
+                <div class="form-group">
+                    <label for="sender">Sender:</label>
+                    <select name="sender" id="sender" required>
+                        <!-- Options for selecting the sender (populate this dynamically) -->
+                    </select>
+                </div>
+                
+                <!-- Receiver Dropdown -->
+                <div class="form-group">
+                    <label for="receiver">Receiver:</label>
+                    <select name="receiver" id="receiver" required>
+                        <!-- Options for selecting the receiver (populate this dynamically) -->
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="amount">Amount:</label>
+                    <input type="number" name="amount" id="amount" min="1" required>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit">Transfer</button>
+                </div>
+
+                <div class="message" id="success-message"></div>
+                <div class="error-message" id="error-message"></div>
+            </form>
+        </section>
+    </main>
+    <script>
+        const customersData = [
+            { id: 1, name: "Customer 1", email: "customer1@example.com", balance: 1000 },
+            { id: 2, name: "Customer 2", email: "customer2@example.com", balance: 2000 },
+            { id: 3, name: "Customer 3", email: "customer3@example.com", balance: 1500 },
+            // Add more customer objects as needed
+        ];
+    </script>
+    <footer>
+        <p>&copy; 2023 Banking System</p>
+    </footer>
+
+    <script src="customers.js"></script>
+    <script src="transfer.js"></script>
+    <script src="transactions.js"></script>
+    <script src="Node.js"></script>
+    <script src="server.js"></script>
+    <script src="sql.js"></script>
+</body>
+</html>
